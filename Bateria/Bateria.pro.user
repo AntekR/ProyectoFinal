@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 11.0.3, 2023-11-11T19:43:49. -->
+<!-- Written by QtCreator 11.0.3, 2023-11-11T20:37:20. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -241,9 +241,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Prueba2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Angie/OneDrive - Universidad de Antioquia/Semestre 2/ProyectoFinal/Bateria/Prueba.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Angie/OneDrive - Universidad de Antioquia/Semestre 2/ProyectoFinal/Bateria/Prueba.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Angie/OneDrive - Universidad de Antioquia/Semestre 2/ProyectoFinal/Bateria/Bateria.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Angie/OneDrive - Universidad de Antioquia/Semestre 2/ProyectoFinal/Bateria/Bateria.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
