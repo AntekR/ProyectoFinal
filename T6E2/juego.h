@@ -21,6 +21,8 @@ class Juego : public QMainWindow
 public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
+    void paintEvent(QPaintEvent *);
+
 
 private:
     Ui::Juego *ui;
@@ -30,7 +32,7 @@ private:
     vector<Personaje*> enemigos;
 
     void actualizar();
-    void paintEvent(QPaintEvent* event);
     void keyPressEvent(QKeyEvent* event);
+
 };
 #endif // JUEGO_H

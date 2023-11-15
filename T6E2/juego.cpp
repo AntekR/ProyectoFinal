@@ -1,5 +1,7 @@
 #include "juego.h"
 #include "ui_juego.h"
+#include <QPainter>
+
 
 Juego::Juego(QWidget *parent)
     : QMainWindow(parent)
@@ -27,9 +29,10 @@ Juego::~Juego()
     delete ui;
 }
 
-void Juego::paintEvent(QPaintEvent *event)
+void Juego::paintEvent(QPaintEvent *)
 {
-
+    QPainter painter(this);
+    painter.drawPixmap(0,0,800,550,QPixmap(":/fotos/fondoInicio.jpg"));
 }
 
 void Juego::keyPressEvent(QKeyEvent *event)
@@ -52,4 +55,6 @@ void Juego::keyPressEvent(QKeyEvent *event)
         personajes[0]->moverse(0.0, 0.1);
     }
 }
+
+
 
