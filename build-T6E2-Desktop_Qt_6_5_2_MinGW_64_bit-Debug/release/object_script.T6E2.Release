@@ -1,0 +1,13 @@
+release/gamepause.o
+release/main.o
+release/juego.o
+release/arma.o
+release/rick.o
+release/morty.o
+release/personaje.o
+release/nivel.o
+release/scenes.o
+release/qrc_Imagenes.o
+release/moc_gamepause.o
+release/moc_juego.o
+release/moc_scenes.o

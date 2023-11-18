@@ -26,13 +26,14 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Juego</string>
+   <string>T6E2 Rick and Morty</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-image: url(:/fotos/fondoInicio.jpg);
+font: 9pt &quot;Franklin Gothic Heavy&quot;;</string>
   </property>
   <property name="locale">
    <locale language="Spanish" country="Spain"/>
@@ -44,8 +45,26 @@
    <property name="enabled">
     <bool>true</bool>
    </property>
+   <widget class="QPushButton" name="bottonComenzar">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>400</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>Comenzar</string>
+    </property>
+   </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>

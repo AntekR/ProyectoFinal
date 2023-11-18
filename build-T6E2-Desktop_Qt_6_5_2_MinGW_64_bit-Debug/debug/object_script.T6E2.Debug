@@ -1,0 +1,13 @@
+debug/gamepause.o
+debug/main.o
+debug/juego.o
+debug/arma.o
+debug/rick.o
+debug/morty.o
+debug/personaje.o
+debug/nivel.o
+debug/scenes.o
+debug/qrc_Imagenes.o
+debug/moc_gamepause.o
+debug/moc_juego.o
+debug/moc_scenes.o

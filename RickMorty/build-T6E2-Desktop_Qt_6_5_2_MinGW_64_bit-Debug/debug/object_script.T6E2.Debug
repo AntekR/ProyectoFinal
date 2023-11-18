@@ -1,0 +1,10 @@
+debug/Bloques.o
+debug/GraphicsScenes.o
+debug/Rick.o
+debug/RickandMorty.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_img.o
+debug/moc_Rick.o
+debug/moc_RickandMorty.o
+debug/moc_mainwindow.o

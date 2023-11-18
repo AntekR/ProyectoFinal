@@ -13,6 +13,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,6 +22,7 @@ class Ui_Juego
 {
 public:
     QWidget *centralwidget;
+    QPushButton *bottonComenzar;
 
     void setupUi(QMainWindow *Juego)
     {
@@ -35,12 +37,17 @@ public:
         Juego->setSizePolicy(sizePolicy);
         Juego->setMinimumSize(QSize(800, 800));
         Juego->setAutoFillBackground(false);
-        Juego->setStyleSheet(QString::fromUtf8(""));
+        Juego->setStyleSheet(QString::fromUtf8("background-image: url(:/fotos/fondoInicio.jpg);\n"
+"font: 9pt \"Franklin Gothic Heavy\";"));
         Juego->setLocale(QLocale(QLocale::Spanish, QLocale::Spain));
         Juego->setUnifiedTitleAndToolBarOnMac(false);
         centralwidget = new QWidget(Juego);
         centralwidget->setObjectName("centralwidget");
         centralwidget->setEnabled(true);
+        bottonComenzar = new QPushButton(centralwidget);
+        bottonComenzar->setObjectName("bottonComenzar");
+        bottonComenzar->setGeometry(QRect(370, 400, 75, 23));
+        bottonComenzar->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,255);"));
         Juego->setCentralWidget(centralwidget);
 
         retranslateUi(Juego);
@@ -50,7 +57,8 @@ public:
 
     void retranslateUi(QMainWindow *Juego)
     {
-        Juego->setWindowTitle(QCoreApplication::translate("Juego", "Juego", nullptr));
+        Juego->setWindowTitle(QCoreApplication::translate("Juego", "T6E2 Rick and Morty", nullptr));
+        bottonComenzar->setText(QCoreApplication::translate("Juego", "Comenzar", nullptr));
     } // retranslateUi
 
 };

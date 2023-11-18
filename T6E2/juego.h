@@ -6,6 +6,8 @@
 #include <QtGui/QImage>
 #include <QtWidgets/QLabel>
 #include <QtGui/QPaintEvent>
+#include <QGraphicsScene>
+
 
 #include "personaje.h"
 #include "nivel.h"
@@ -22,7 +24,11 @@ public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
     void paintEvent(QPaintEvent *);
+    QGraphicsScene *createInitialScene();
+    QGraphicsScene *createlevel1Scene();
+    QGraphicsScene *createlevel2Scene();
 
+    void init();
 
 private:
     Ui::Juego *ui;
@@ -30,6 +36,11 @@ private:
     QLabel titulo;
     vector<Personaje*> personajes;
     vector<Personaje*> enemigos;
+
+    QGraphicsScene *initialScene;
+    QGraphicsScene *level1Scene;
+    QGraphicsScene *level2Scene;
+
 
     void actualizar();
     void keyPressEvent(QKeyEvent* event);

@@ -9,21 +9,25 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    gamepause.cpp \
     main.cpp \
     juego.cpp \
     arma.cpp \
     rick.cpp \
     morty.cpp \
     personaje.cpp \
-    nivel.cpp
+    nivel.cpp \
+    scenes.cpp
 
 HEADERS += \
+    gamepause.h \
     juego.h \
     arma.h \
     rick.h \
     morty.h \
     personaje.h \
-    nivel.h
+    nivel.h \
+    scenes.h
 
 FORMS += \
     juego.ui

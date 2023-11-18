@@ -1,0 +1,10 @@
+release/Bloques.o
+release/GraphicsScenes.o
+release/Rick.o
+release/RickandMorty.o
+release/main.o
+release/mainwindow.o
+release/qrc_img.o
+release/moc_Rick.o
+release/moc_RickandMorty.o
+release/moc_mainwindow.o

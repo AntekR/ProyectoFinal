@@ -1,5 +1,6 @@
 #include "juego.h"
 #include "ui_juego.h"
+#include <qgraphicsitem.h>
 #include <QPainter>
 
 
@@ -8,20 +9,8 @@ Juego::Juego(QWidget *parent)
     , ui(new Ui::Juego)
 {
     ui->setupUi(this);
-    QLabel* titulo = new QLabel("Temporada 6 EP 2");
-    titulo->setAlignment(Qt::AlignCenter);
-    setCentralWidget(titulo);
 
-    // Establecer el nivel inicial
-    int nivelActual = 0;
-
-
-    // Establecer la política de tamaño para que se ajuste al contenido
-    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-
-
-
-
+    initialScene = createInitialScene();
 }
 
 Juego::~Juego()
@@ -32,7 +21,51 @@ Juego::~Juego()
 void Juego::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
-    painter.drawPixmap(0,0,800,550,QPixmap(":/fotos/fondoInicio.jpg"));
+    painter.drawPixmap(0,0,1600,900,QPixmap(":/fotos/fondoInicio.jpg"));
+}
+
+QGraphicsScene *Juego::createInitialScene()
+{
+    //Se crea la pantalla inicial
+    QGraphicsScene *scene = new QGraphicsScene();
+
+    //Agrega elementos a la pantalla
+    QGraphicsRectItem *rect1 =  new QGraphicsRectItem(0,0,100,100);
+
+    rect1->setBrush(QBrush(Qt::red));
+    scene->addItem(rect1);
+
+    return scene;
+}
+
+
+QGraphicsScene *Juego::createlevel1Scene()
+{
+    QGraphicsScene *scene = new QGraphicsScene();
+
+    // Agrega elementos a la escena del primer nivel
+    QGraphicsRectItem *rect2 = new QGraphicsRectItem(0, 0, 200, 200);
+    rect2->setBrush(QBrush(Qt::blue));
+    scene->addItem(rect2);
+
+    return scene;
+}
+
+QGraphicsScene *Juego::createlevel2Scene()
+{
+    QGraphicsScene *scene = new QGraphicsScene();
+
+    // Agrega elementos a la escena del primer nivel
+    QGraphicsRectItem *rect2 = new QGraphicsRectItem(0, 0, 200, 200);
+    rect2->setBrush(QBrush(Qt::black));
+    scene->addItem(rect2);
+
+    return scene;
+}
+
+void Juego::init()
+{
+    initialScene = createInitialScene();
 }
 
 void Juego::keyPressEvent(QKeyEvent *event)
